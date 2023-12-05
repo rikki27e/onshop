@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        header {
+            background-color: #33658A;
+            max-width: 100%;
+            height: 15vh;
+            border-radius: 0px 0px 40px 40px;
+            /* display: flex; */
+            padding-top: 20px;
+            padding-left: 20px;
+            color: white;
+        }
+        header .container {
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            gap: 10px;
+
+        }
+        header .container .nama {
+            display: block;
+        }
+        .search {
+            /* display: flex; */
+            /* align-items: center; */
+            /* justify-content: center; */
+            position: absolute;
+            margin: 20px;
+            /* margin-left: 50%; */
+            /* margin-right: 50%; */
+            /* margin-left: 30px; */
+            top: 9%;
+            left: 9%;
+      
+        }
+
+
+    .search-container {
+      display: flex;
+      max-width: 300px;
+      margin: 20px;
+      /* position: absolute; */
+    }
+
+    .search-input {
+      flex: 1;
+      padding: 8px;
+      border-radius: 0 10px 10px 0;
+      border: 1px solid #ccc;
+    }
+
+    .search-button {
+      padding: 8px;
+      background-color: #86BBD8;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      border-radius: 10px 0 0 10px;
+    }
+
+    main {
+        margin-top: 10%;
+
+    }
+    main .nav {
+        display: flex;
+        justify-content: space-around;
+        text-decoration: none;
+        list-style-type: none;
+    }
+    main .nav a {
+        text-decoration: none;
+        color: black;
+    }
+    main .nav a:hover {
+        color: #33658A;
+    }
+    .konten-produk {
+        display: flex;
+        /* background-color: #86BBD8; */
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 10px 10px 10px 10px;
+        /* align-items: center; */
+        margin-top: 20px;
+        gap: 20px;
+    }
+    .produk {
+        background-color: rgb(251, 251, 251);
+        /* display: flex; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        width: 100px;
+        border-radius: 8px;
+        background: #e0e0e0;
+        box-shadow:  5px 5px 21px #acacac,
+             -5px -5px 21px #ffffff;
+        overflow: hidden;
+        position: relative;
+
+    }
+
+    .img-produk {
+        width: 100px;
+
+    }
+    .harga {
+        background-color: gold;
+        position:absolute;
+        /* top: ; */
+        right: 0;
+        border-radius: 2px;
+        top: 1%;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="img/profile.jpg" alt="" style="border-radius: 10px; width: 50px;">
+            <div class="nama">
+                <span>Hello..</span><br>
+                <span>aPrilio</span>
+            </div>
+        </div>
+        <div class="search">
+            <div class="search-container">
+                <button class="search-button">Search</button>
+                <input type="text" class="search-input" placeholder="Search...">
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+       <div class="nav">
+        <a href="">Minuman</a>
+        <a href="">Makanan</a>
+        <a href="">DeACtive</a>
+       </div> 
+
+       <div class="konten-produk">
+            <div class="produk">
+                <div>
+                    <img src="img/es teh.jpg" alt="" class="img-produk">
+                    <b>Es Teh</b>
+                    <p>Di jamin Halal 100% BPOM</p>
+                </div>
+                <div class="harga">
+                    <p>Rp.10.000</p>
+                </div>
+            </div>
+            <div class="produk">
+                <div>
+                    <img src="img/es teh.jpg" alt="" class="img-produk">
+                    <b>Es Teh</b>
+                    <p>Di jamin Halal 100% BPOM</p>
+                </div>
+                <div class="harga">
+                    <p>Rp.10.000</p>
+                </div>
+            </div>
+            <div class="produk">
+                <div>
+                    <img src="img/es teh.jpg" alt="" class="img-produk">
+                    <b>Es Teh</b>
+                    <p>Di jamin Halal 100% BPOM</p>
+                </div>
+                <div class="harga">
+                    <p>Rp.10.000</p>
+                </div>
+            </div>
+            <div class="produk">
+                <div>
+                    <img src="img/es teh.jpg" alt="" class="img-produk">
+                    <b>Es Teh</b>
+                    <p>Di jamin Halal 100% BPOM</p>
+                </div>
+                <div class="harga">
+                    <p>Rp.10.000</p>
+                </div>
+            </div>
+       </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
